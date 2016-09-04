@@ -18,6 +18,10 @@ public class DisplayListItem {
     private String strSource;
     private String strNotes;
     
+    public DisplayListItem(Map<String, String> args){
+        setAll(args);
+    }
+    
     public void setItemName(String itemName){
         strItemName = itemName;
     }
@@ -51,14 +55,14 @@ public class DisplayListItem {
     }
     
     public void setAll(Map<String, String> args){
-        Map<String, String> itemData = new HashMap<>();
+        Map<String, String> itemData = args;
         strItemName = itemData.get("name");
         strType = itemData.get("type");
         strSource = itemData.get("source");
         strNotes = itemData.get("note");
     }
     
-    public Map publish(){
+    public Map getAll(){
         Map attributes = new HashMap();
         attributes.put("name", strItemName);
         attributes.put("type", strType);
