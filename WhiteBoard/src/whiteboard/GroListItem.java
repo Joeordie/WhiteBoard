@@ -5,12 +5,18 @@
  */
 package whiteboard;
 
+import java.util.Map;
+import java.util.HashMap;
+
+
 /**
  *
  * @author joeordie
  */
-public class GroListItem {
-    public String strItemName;
-    public String strNotes;
+public class GroListItem extends DisplayListItem{
+   
+    public GroListItem(Map<String, String> args){
+        super(args);
+    }
     
 }
