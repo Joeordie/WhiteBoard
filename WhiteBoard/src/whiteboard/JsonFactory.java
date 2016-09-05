@@ -6,7 +6,7 @@
 package whiteboard;
 
 /**
- *
+ * build JSON objects from HashMap objects
  * @author Steven
  */
 public class JsonFactory {
