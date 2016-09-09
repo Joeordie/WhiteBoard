@@ -59,7 +59,7 @@ public class DisplayListItem {
         strItemName = itemData.get("name");
         strType = itemData.get("type");
         strSource = itemData.get("source");
-        strNotes = itemData.get("note");
+        strNotes = itemData.get("notes");
     }
     
     public Map getAll(){
